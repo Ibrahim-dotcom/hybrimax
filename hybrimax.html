@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+	<head>
+		<script src="https://use.fontawesome.com/00180a1c5a.js"></script>
+		<title> hybrimax</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style>
+				body{
+					font-family:helvetica,serif;
+					margin:0;
+					padding:0;
+					display:flex;
+					flex-flow: column nowrap;
+					justify-content: center;
+					align-items:center;
+					}
+			     #top{
+				     z-index:2;
+				     height:auto;
+				     background-color:rgba(0,0,0,0.7);
+				     position: fixed;
+				     top:0;
+				     width:100%;
+	                padding-bottom:10px;
+                  }
+                  #menubar{
+                  	position: absolute;
+                      right:0;
+                      padding:10px;
+                   }
+                   #xmenu{
+                   	display:none;
+                       position: absolute;
+                       right:0;
+                       padding:10px;
+                   }
+                 #logo{
+                     width:60px;
+                     height:60px;
+                     z-index:2;
+                     margin-left:10px;
+                     
+                 }
+                 #dropelements{
+                 	display:none;
+                     align-items:center;
+                     justify-content:center;
+                     flex-flow: column nowrap;
+           
+                 }
+                 #dropelements a:link{
+                     color:white;
+                     text-decoration:none;
+                 
+                  }
+                 #dropelements a:visited{
+                 	color:rgba(255,2555,255,0.7);
+                   }
+                  
+                  #dropelements a:active{
+                  	color:rgba(255,255,255,0.7);
+                  }
+                  #dropbtn{
+                      display:flex;
+                      flex-flow:row nowrap;
+                      justify-content:center;
+                      align-items:center;
+                  	color:#c09bff;
+                      width:170px;
+                      height:30px;
+                      border:2px solid #c09bff;
+                      background-color:rgba(0,0,0,0.0);
+                      text-decoration:none;
+                  }
+                  #dropbtn a:visited{
+                  	background-color:#c09bff;
+                     color:white;
+                  }
+                  	
+                  #dropbtn:hover,#dropbtn:active{
+                        background-color:#c09bdf;
+          
+                        color:white;
+                  }
+                  
+                  #minidropdown{
+                  	display:none;
+                      text-align:center;
+                      flex-flow:column nowrap;
+                      align-items:center;
+                      justify-content:center;
+                  }
+                  
+				#div1{
+					display:flex;
+					flex-flow:column nowrap;
+					align-items:center;
+					background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(mbr-1014x614.jpg);
+					color:white;
+			    }
+				#div2{
+					display:flex;
+					align-items:center;
+					margin-top:70px;
+					padding-top:40px;
+					padding-bottom:60px;
+				    background-image:url("mbr-972x547.jpg");
+					background-size:cover;
+					border-radius:15px;
+		            width:95%;
+		            box-shadow:15px 15px 30px 8px rgba(150,150,255,0.3);
+			     }
+			     #img1{
+				      width:65%;
+				       height:auto;
+				      border-radius:15px;
+				      position:relative;
+				      animation-name:bounce;
+                      animation-duration: 1s ;
+                       animation-iteration-count:infinite;
+                       animation-direction:alternate;
+                       animation-timing-curve:linear;
+                       
+                     
+                  }
+				@keyframes bounce{
+					  from {top:45px;}
+					  to {top:50px;}
+			     }
+		       #hybrimax{
+	                font-size:40px;
+					text-align:center;
+		        }
+		     p.one{
+			  width:80%;
+			  text-align:center;
+			  font-size:17px;
+			  padding:20px;
+			  line-height:25px;
+			} 
+			#getStarted{
+				display: flex;
+				align-items:center;
+				justify-content:center;
+				align-text: center;
+				width:220px;
+				height:55px;
+				background-color:#c09bdf;
+				color:white;
+				border:none;
+				border-radius:5px;
+				margin-bottom:80px;
+				text-decoration:none;
+	        }
+	         #getStarted:hover,#getStarted:active{
+		            background-color:#c055ff;
+		            opacity:70%;
+		      }
+	        #services{
+		          font-size:30px;
+		          font-weight:350;
+		          margin-top:170px;
+		          padding-bottom:20px;
+		     }
+		    .header{
+			   font-weight:400;
+			  font-size:25px;
+			}
+		    .two{
+			     font-size:17px;
+				text-align:center;
+				width:60%;
+				margin-bottom:25px;
+			}
+			#div3{
+				display:flex;
+				flex-flow:column nowrap;
+				align-items:center;
+				justify-content:center;
+				background-color:rgba(0,0,7,0.9);
+				padding-top:50px;
+				margin-top:80px;
+				margin-bottom:30px;
+				color:white;
+		    } 
+			#img2{
+				width:90%;
+				height:auto;
+				
+				}
+				hr{
+					background-color:lightgreen;
+					width:130px;
+					border:2px solid lightgreen;
+					border-radius:2px;
+					margin-bottom:60px;
+					}
+					.header{
+						font-size:30px;
+						font-weight:350;
+						padding-top:30px;
+				    }
+				#readMore,#readMore:visited{
+					display:flex;
+					align-items:center;
+					justify-content: center;
+					width:220px;
+					height:55px;
+					color:rgb(150,0,210);
+					background-color:rgba(0,0,0,0);
+					border:2px solid rgb(150,0,210);
+					margin-bottom:40px;
+					border-radius:5px;
+					text-decoration:none;
+                }
+                #readMore:hover,#readMore:active{
+                	color:white;
+                    background-color:rgb(150,0,210,0.7);
+                 }
+			  #div4{
+				  margin-top:40px;
+				  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("camerabackground.jpg");
+				  display: flex;
+				  flex-flow:column nowrap;
+				  justify-content:center;
+				  align-items:center;
+				 color: white;
+				width:100%;
+				height:600px;
+				}
+				#projectHead,#div4 p{
+					display:flex;
+					flex-flow:column nowrap;
+					font-size:30px;
+					justify-content:center;
+					align-items:center;
+					text-align:center;
+			     } 
+			     #div4 p{
+				      font-size:20px;
+				}
+			     #gettingStarted {
+				   display:flex;
+				   align-items: center;
+				   justify-content:center;
+                   width:300px;
+                   height:80px;
+                   color:rgb(160,0,210);
+                   background-color:rgba(0,0,0,0.0);
+                   border:2px solid rgb(160,0,210);
+                   align-text:center;
+                   text-decoration:none;
+                  }
+                  
+                  #gettingStarted:hover{
+                  	color:white;
+                     background-color:rgb(160,0,210,0.7);
+                  }
+                  #div5{
+                  	display:flex;
+                      flex-flow:column nowrap;
+                      align-items:center;
+                      justify-content:center;
+                 }
+                 #div5 a:link,#div5 a:link{
+                 	color:black;
+                     text-decoration:none;
+                 }
+                 div5 a:hover{color:rgb(0,0,0,0.7);}
+                 .social{
+                 	display:flex;
+                 	width:260px;
+                     height:60px;
+                     z-index:1;
+                     background-color: rgb(245,245,245);
+                     border-radius:4px;
+                     margin-bottom:40px;
+                     justify-content:space-around;
+                     align-items:center;
+                    }
+                    #footer{
+                    	background-color:rgba(0,0,0,0.7);
+                    	display:flex;
+                        flex-flow:column nowrap;
+                        justify-content:center;
+                        align-items:center;
+                    	width:100%;
+                         height:auto;
+                         align-text:center;
+                         color:white;
+                     }
+                     #footer p{
+                     	padding:35px;
+                         align-text:center;
+                         font-size:13px;
+                       
+                     }
+                     .video_prod span{
+                     	margin:40px;
+                         color:rgb(120,10,210);
+                      }
+                     .video_prod{
+                     	display:flex;
+                         flex-flow:column nowrap;
+                     	justify-content:center;
+                        align-items:center;
+                      }
+                     .video_prod:hover{
+                     	width:90%;
+                     	background-color:rgb(120,10,210);
+                         color:white;
+                    }
+                     .video_prod:hover span{
+                     	color:white;
+                     }
+                     .slideImages{
+                     	margin:auto;
+                         margin-bottom:80px;
+                     	display: none;
+                      }     
+			</style>
+				
+    </head>
+    <body>
+    	<div id="div1">
+    	<div id="top">
+       <i class="fa fa-bars fa-2x" id="menubar" onclick="dropDown()"></i>
+        <i class="fa fa-times fa-2x" aria-hidden="true"id="xmenu" onclick="reverse()"></i>
+       <img id="logo" src="hybrimax-logo-iinsta-01-01-1-144x144.png" >
+       	<div id="dropelements">
+       	  <a href="https://hybrimaxstudios.com/index.html"><i class="fa fa-home fa-lg"></i> HOME</a><br/><br/>
+             <span id="miniabout" onclick="miniDropDown()"><i class="fa fa-video-camera fa-lg"></i> About Us<i class="fa fa-caret-down"></i></span><br/><br/>
+             <div id="minidropdown" >
+             <a >CORE VALUES</a>
+             <a><i class="fa fa-briefcase fa-lg"></i> WORKFORCE</a><br/>
+             </div>
+             <a href="https://hybrimaxstudios.com/project.html"><i class="fa fa-shopping-cart fa-lg"></i> Projects</a><br/><br/>
+             <a id="dropbtn" href="https://hybrimaxstudios.com/project.html"><i class="fa fa-address-card fa-lg"></i> contact us</a>
+           
+           </div>
+        </div>
+    	    <div id="div2">
+    	        <img id=img1 src="mbr-1920x1079.jpg">
+         	</div>
+         <h1 id="hybrimax"> HYBRIMAX STUDIOS</h1>
+         <p class="one"> we are a modern video and sound production studio that cherishes
+               the art of what we do while also satisfying and harnessing the imagination
+               of our customers.
+          </p>
+          <a id="getStarted" href="#services"><i class="fa fa-hourglass-start"></i> &nbsp &nbsp GET STARTED</a>
+        </div>
+        <h2 id="services"> Services</h2>
+        <hr/>
+        <div class="video_prod">
+        <span class="fa fa-video-camera fa-5x" aria-hidden="true" ></span>
+        <h1 class="header">Video production</h1>
+        <p class="two">we make professional quality film work easily
+        available in a digital format. we do this by using a pricing structure
+        that makes our digital productions perfect and by making it fun for 
+        them to come to us anytime.
+        </p>
+        </div>
+        <div class="video_prod">
+        <span class="fa fa-file-text fa-5x" aria-hidden="true" ></span>
+        <h1 class="header"> Video Consultancy</h1>
+        <p class="two">we help our clients preserve memories
+              and portray themselves in the best light.
+              we thrive on repeat business by developing
+              relationship with our clients and calling them 
+             with timely reminders for new productions. </p>
+             </div>
+             <div class="video_prod">
+             <span class="fa fa-film fa-5x" aria-hidden="true" ></span>
+             <h1 class="header"> Cinematography </h1>
+             <p class="two"> we are good at moving camera
+                on set while shooting they work alongside with
+                the film director on set so as to work hand in hand
+                and read the directors mind to come out with positive
+                results at the end of the shooting.</p>
+                </div>
+        <div id="div3"><img src="mbr-1014x614.jpg" id="img2"/>
+               <h1 class="header">About Us</h1>
+               <hr/>
+               <p class="one"> we are a modern video and sound production
+                      studio that cherishes the art of what we do while 
+                      also satisfying and harnessing the imagination of
+                      our customers in todays world most people/businesses
+                      already know that in order to compete with others,they 
+                      need to make a video that stands out and catches the
+                      attention of their customers/fans.</p>
+                      <a id="readMore" href="https://hybrimaxstudios.com/core_values.html"><i class="fa fa-leanpub"></i> &nbsp &nbsp Read More</a>
+               
+        </div>
+        <h1 class="header"> PROJECTS</h1>
+        <hr>
+       <iframe width="300" height="300" src="https://www.youtube.com/embed/ujIpK_whI0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Vantage Court Video</iframe>
+       <strong>VANTAGE COURT VIDEO</strong>
+       <small>Toggle video to view full screen</small>
+       <div id="div4">
+       	<h1 id="projectHead" > HAVE A PROJECT IN MIND </h1>
+           <p>we are the perfect fit for your project</p>
+           <a id="gettingStarted" href="https://hybrimaxstudios.com/contac.html"><i class="fa fa-hourglass-start"></i> &nbsp &nbsp &nbsp GETTING STARTED TODAY</a>
+       </div>
+       <div id="div5">
+          <h1 class="header">CONNECT WITH US</h1>
+          <hr/>
+           <p class="one"> You can get connected with us via social media
+              we are readily available</p>
+            &nbsp<div class="social" ><i style="color: blue;" class="fa fa-facebook-official fa-3x"></i> <p><a href="https://facebook.com/tormigroup" target="_blank">Facebook <br/>News feed</p><i class="fa fa-arrow-right " aria-hidden="true"></i></a></div>
+             &nbsp <div class="social"><i style="color: red;"class="fa fa-youtube-play fa-3x" ></i> <p><a href="https://www.youtube.com/channel/UC0517dyBHIhWsRKryGLzgbg" target="_blank">Youtube<br/>our videos</p><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+       </div>    
+       <h1 class="header">OUR CLIENTS </h1>
+       <hr/>
+       <div id="slideShow">
+       	<img class="slideImages" src="supafo-logo-975x974.png" style="width:50%" >
+       	<img class="slideImages" src="tormi-groupsno-background-1-1499x1267.png" style="width:50%;" >
+       	<img class="slideImages" src="arml-logo-727x330.png" style="width:50%;" >
+       	<img class="slideImages" src="branding-logos-1-3000x3000.png" style="width:50%;" >
+       	<img class="slideImages" src="branding-logos-2-3001x3000.png" style="width:50%;" >
+      </div>
+      </div>
+       <div id="footer">
+       	<p >©COPYRIGHT 2020 HYBRIMAX STUDIOS-
+                    ALL RIGHTS RESERVED
+           </p>
+       </div>
+          <script>
+			var currentImage=0;
+			showImages();
+			function showImages(){
+				var i;
+				var images=document.getElementsByClassName("slideImages");
+					for(i=0; i < images.length;i++){
+						images[i].style.display="none";
+                    }
+                    currentImage++; 
+                    if(currentImage>images.length){currentImage=1}      
+                     images[currentImage-1].style.display="flex";
+                setTimeout(showImages,2000);
+                }
+                function dropDown(){
+               document.getElementById("dropelements").style.display="flex";
+               document.getElementById("menubar").style.display="none";
+               document.getElementById("xmenu").style.display="block";
+               }
+               function reverse(){
+                 document.getElementById("dropelements").style.display="none";
+                 document.getElementById("menubar").style.display="block";
+                 document.getElementById("xmenu").style.display="none";
+                    if(getComputedStyle(document.querySelector("#minidropdown")).display=="flex"){
+                          document.getElementById("minidropdown").style.display="none";
+                            document.getElementById("miniabout").style.color="rgba(255,255,255,1)";
+                    }
+                }
+                function miniDropDown(){
+                  const element=document.querySelector("#minidropdown");
+                  const style=getComputedStyle(element);
+                  const display= style.display;
+                  if(display=="none"){
+                     document.getElementById("minidropdown").style.display="flex";
+                        document.getElementById("miniabout").style.color="rgba(255,255,255,0.7)";
+                  }
+                  else if(display=="flex"){
+                  	document.getElementById("minidropdown").style.display="none";
+                      document.getElementById("miniabout").style.color="rgba(255,255,255,1)";
+                   }	
+                }
+		</script>
+        
+    </body>
+    </html>
+    
+    
+  
